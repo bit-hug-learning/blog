@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import theme from './theme'
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -8,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      background-color: ${theme.dark.secondary};
   }
 
   a {
