@@ -6,6 +6,7 @@ export default function Blog() {
     <>       
       {postInfo.map(post => (
         <Post 
+          key={post.title}
           image={post.image}
           autor={post.autor}
           date={post.date}

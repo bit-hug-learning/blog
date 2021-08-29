@@ -16,7 +16,7 @@ function Post(props) {
         <p className="post__copy">{props.copy}
         </p>
         <div className="post__hashtags-container">
-          {props.hashtags.map(hash => <p className="post__hashtag">{hash}</p>)}
+          {props.hashtags.map(hash => <p key={hash} className="post__hashtag">{hash}</p>)}
         </div>
 
         <section className="post__cta">
