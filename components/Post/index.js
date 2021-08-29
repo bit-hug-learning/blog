@@ -1,22 +1,22 @@
 import React from 'react';
 import PostContainer from 'components/Post/styles';
 
+
 function Post(props) {
   return(
     <PostContainer>
     <article className="post">
-      <img className="post__image" src={props.image} alt="avatar" />
+      <a href="">
+        <img className="post__image" src={props.image} alt="avatar" width="38" height="38"/>
+      </a>
       <section className="post__body">
-        <p className="post__autor">{props.autor}</p>
+        <a href="" className="post__autor">{props.autor}</a>
         <p className="post__date">{props.date}</p>
-        <h2 className="post__title">{props.title}</h2>
+        <h2 className="post__title"><a href="">{props.title}</a></h2>
         <p className="post__copy">{props.copy}
         </p>
         <div className="post__hashtags-container">
-          {/* Estos datos salen con un map a un arreglo: */}
-
           {props.hashtags.map(hash => <p className="post__hashtag">{hash}</p>)}
-          {/* <p className="post__hashtag">#HTML</p> */}
         </div>
 
         <section className="post__cta">

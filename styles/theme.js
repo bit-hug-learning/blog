@@ -9,6 +9,7 @@ const theme = {
     primary: '#226698',
     secondary: '#292929',
     postPrimary: '#505050',
+    postPrimaryHover: '#676767',
     postSecondary: '#4a6b83',
     borderPrimary: '#379EFE',
     borderSecondary: '#8000FF',

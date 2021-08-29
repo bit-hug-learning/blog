@@ -1,8 +1,5 @@
 import Example from 'components/Example/index';
-import SEO from 'components/SEO';
-import Post from 'components/Post/index';
-import postInfo from 'utils/PostInfo';
-
+import SEO from 'components/SEO'; 
 
 export default function Home() {
   return (
@@ -10,19 +7,6 @@ export default function Home() {
       <SEO title="Bithug" description="Bithug description" />
       <main>hello world</main>
       {/* <Example /> */}
-      
-      {postInfo.map(post => (
-        <Post 
-          image={post.image}
-          autor={post.autor}
-          date={post.date}
-          title={post.title}
-          copy={post.copy}
-          hashtags={post.hashtags}
-          likes={post.likes}
-          comments={post.comments}  
-        />
-        ))}
 
     </>
   );
