@@ -21,6 +21,10 @@ const PostContainer = styled.div`
       border: 1px solid ${theme.dark.borderPrimary};
       border-radius: 8px;
 
+      &.secondary {
+        background-color: ${theme.dark.postSecondary};
+      }
+
       &:hover {
         background-color: ${theme.dark.postPrimaryHover};
       }
@@ -34,6 +38,10 @@ const PostContainer = styled.div`
       &__body {
         margin: auto 0;
         margin-left: 5px;
+
+        &.secondary {
+          width: 300px;
+        }
       }
 
       &__autor {
@@ -81,7 +89,15 @@ const PostContainer = styled.div`
           }
           @media (min-width: ${theme.breakpoints.lg}) {
             margin-right: 80px;
+            
           }
+        }
+
+        .post__like.secondary, .post__comment.secondary {
+            @media (min-width: ${theme.breakpoints.sm}) {
+            margin-right: 10px;
+            font-size: 1.2rem;    
+            }
         }
 
         .post__like-img, .post__comment-img {

@@ -6,7 +6,7 @@ const theme = {
     lg: '1280px',
   },
   dark: {
-    primary: '#226698',
+    primary: '#264861',
     secondary: '#292929',
     postPrimary: '#505050',
     postPrimaryHover: '#676767',

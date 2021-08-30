@@ -39,7 +39,7 @@ const postInfo = [
     image: "/src/assets/icons/avatarGV.png",
     autor: "Gonzalo Vidal",
     date: "March 5",
-    title: "Data Structures - Javascript, a wider vision from a perspective of an ex---",
+    title: "Data Structures - Javascript, a wider vision from a perspective of an ex marine...",
     copy: "Comprenden colecciones de valores, las relaciones entre ellos y las funciones y operaciones ...",
     hashtags: [
       "#Javascript",

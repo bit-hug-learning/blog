@@ -1,15 +1,14 @@
 import React from 'react';
 import PostContainer from 'components/Post/styles';
 
-
 function Post(props) {
   return(
     <PostContainer>
-    <article className="post">
+    <article className={`post ${props.type == "secondary" && "secondary"}`}>
       <a href="">
         <img className="post__image" src={props.image} alt="avatar" width="38" height="38"/>
       </a>
-      <section className="post__body">
+      <section className={`post__body ${props.type == "secondary" && "secondary"}`}>
         <a href="" className="post__autor">{props.autor}</a>
         <p className="post__date">{props.date}</p>
         <h2 className="post__title"><a href="">{props.title}</a></h2>
@@ -20,10 +19,10 @@ function Post(props) {
         </div>
 
         <section className="post__cta">
-          <p className="post__like">
+          <p className={`post__like ${props.type == "secondary" && "secondary"}`}>
             <span className="post__like-img"></span> {props.likes} likes
           </p>
-          <p className="post__comment">
+          <p className={`post__comment ${props.type == "secondary" && "secondary"}`}>
             <span className="post__comment-img"></span> {props.comments} comments
           </p>
         </section>
