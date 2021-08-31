@@ -18,6 +18,7 @@ const AsideContainer = styled.div`
     &__section {
       width: 340px;
       padding: 10px;
+      padding-bottom: 20px;
       margin: 10px 0;
       border: 1px solid ${theme.dark.borderPrimary};
       border-radius: 8px;

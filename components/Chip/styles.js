@@ -14,7 +14,7 @@ const ChipContainer = styled.span`
     align-items: center;
     height: 3.2rem;
     padding: 5px;
-    margin: 10px 10px;
+    margin: 15px 10px;
     font-size: 1.4rem;
     color: black;
     border-radius: 16px;
@@ -23,6 +23,9 @@ const ChipContainer = styled.span`
 
   .chip__text {
     display: inline-block;
+    margin: 0 5px;
+    line-height: 32px;
+    vertical-align: middle;
   }
 
   .chip__preppend, .chip__append {

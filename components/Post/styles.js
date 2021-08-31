@@ -13,7 +13,7 @@ const PostContainer = styled.div`
       min-width: 320px;
       max-width: 692px;
       min-height: 280px;
-      padding: 10px 10px 10px 0;
+      padding: 40px 0;
       margin: 10px auto;
       font-size: ${theme.size.m};
       color: ${theme.dark.text};
@@ -23,6 +23,10 @@ const PostContainer = styled.div`
 
       &.secondary {
         background-color: ${theme.dark.postSecondary};
+
+        &:hover {
+        background-color: #6B869B;
+      }
       }
 
       &:hover {
@@ -30,13 +34,12 @@ const PostContainer = styled.div`
       }
 
       &__image {
-        margin: 5px;
-        margin-top: 35px;
+        margin: 3px 5px 0px 8px;
         border-radius: 50%;
       }
 
       &__body {
-        margin: auto 0;
+        /* margin: auto 0; */
         margin-left: 5px;
 
         &.secondary {
