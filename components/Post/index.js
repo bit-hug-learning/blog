@@ -6,7 +6,7 @@ function Post(props) {
     <PostContainer>
     <article className={`post ${props.type == "secondary" && "secondary"}`}>
       <a href="">
-        <img className="post__image" src={props.image} alt="avatar" width="38" height="38"/>
+        <img className="post__avatar" src={props.avatar} alt="avatar" width="38" height="38"/>
       </a>
       <section className={`post__body ${props.type == "secondary" && "secondary"}`}>
         <a href="" className="post__autor">{props.autor}</a>

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "0001",
+    "route": "gonzalovidal",
+    "autor": "Gonzalo Vidal",
+    "avatar": "/src/assets/icons/avatarGV.png",
+    "posts": "",
+    "description": "Entusiasta y coleccionista de hardware y también del software, en particular del Desarrollo Web. Front-End. Inicié este viaje en Julio del 2020.",
+    "location": "Perú",
+    "job": "Estudiante",
+    "contact": [
+      {
+        "name": "Linkedin",  
+        "logo": "/src/assets/icons/linkedin.svg",
+        "url": "https://www.linkedin.com/in/gsvidal/"
+      },
+      {
+        "name": "Portfolio",  
+        "logo": "/src/assets/icons/portfolio.svg",
+        "url": "https://gsvidal.github.io/"
+      },
+      {
+        "name": "Git Hub",  
+        "logo": "/src/assets/icons/github.svg",
+        "url": "https://github.com/gsvidal/"
+      }
+    ]
+  },
+  {
+    "id": "0002",
+    "route": "cristianrodriguez",
+    "autor": "Cristian Rodriguez",
+    "avatar": "https://avatars.githubusercontent.com/u/67974483?v=4",
+    "posts": "",
+    "description": "I'm passionate about precise and meaningful web pages. I stand to bring Tech and Culture together.",
+    "location": "Colombia",
+    "job": "Front-End Developer at Globant",
+    "contact": [
+      {
+        "name": "Linkedin",  
+        "logo": "/src/assets/icons/linkedin.svg",
+        "url": "https://www.linkedin.com/in/cristian-rodr%C3%ADguez-713bb3173/"
+      },
+      {
+        "name": "Portfolio",  
+        "logo": "/src/assets/icons/portfolio.svg",
+        "url": ""
+      },
+      {
+        "name": "Git Hub",  
+        "logo": "/src/assets/icons/github.svg",
+        "url": "https://github.com/CriistianRod"
+      }
+    ]
+  }
+
+]

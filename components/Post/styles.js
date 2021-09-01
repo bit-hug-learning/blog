@@ -11,9 +11,12 @@ const PostContainer = styled.div`
       align-items: flex-start;
       width: 95%;
       min-width: 320px;
+      @media (max-width: ${theme.breakpoints.sm}) {
+        min-width: 95vw;
+      }
       max-width: 692px;
       min-height: 280px;
-      padding: 40px 0;
+      padding: 30px 0;
       margin: 10px auto;
       font-size: ${theme.size.m};
       color: ${theme.dark.text};
@@ -33,17 +36,16 @@ const PostContainer = styled.div`
         background-color: ${theme.dark.postPrimaryHover};
       }
 
-      &__image {
+      &__avatar {
         margin: 3px 5px 0px 8px;
         border-radius: 50%;
       }
 
       &__body {
-        /* margin: auto 0; */
-        margin-left: 5px;
+        margin: 0 5px;
 
         &.secondary {
-          width: 300px;
+          width: 93%;
         }
       }
 

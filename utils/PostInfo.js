@@ -1,6 +1,6 @@
 const postInfo = [
 {
-    image: "/src/assets/icons/avatarGV.png",
+    avatar: "/src/assets/icons/avatarGV.png",
     autor: "Gonzalo Vidal",
     date: "Aug 11",
     title: "Metodología BEM",
@@ -12,7 +12,7 @@ const postInfo = [
     comments: 3
 },
 {
-    image: "https://avatars.githubusercontent.com/u/67974483?v=4",
+    avatar: "https://avatars.githubusercontent.com/u/67974483?v=4",
     autor: "Cristian Rodriguez",
     date: "June 15",
     title: "HTML Semántico",
@@ -24,7 +24,7 @@ const postInfo = [
     comments: 8
 },
 {
-    image: "/src/assets/icons/avatarGV.png",
+    avatar: "/src/assets/icons/avatarGV.png",
     autor: "Gonzalo Vidal",
     date: "May 23",
     title: "Scopes & Closures",
@@ -36,7 +36,7 @@ const postInfo = [
     comments: 4
 },
 {
-    image: "/src/assets/icons/avatarGV.png",
+    avatar: "/src/assets/icons/avatarGV.png",
     autor: "Gonzalo Vidal",
     date: "March 5",
     title: "Data Structures - Javascript, a wider vision from a perspective of an ex marine...",

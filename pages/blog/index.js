@@ -12,7 +12,7 @@ export default function Blog() {
           {posts.map((post) => (
             <Post
               key={post.title}
-              image={post.image}
+              avatar={post.avatar}
               autor={post.autor}
               date={post.date}
               title={post.title}

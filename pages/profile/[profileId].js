@@ -1,8 +1,12 @@
 import { useRouter } from 'next/router';
+import Profile from './index';
 
-export default function Profile() {
+export default function ProfileId() {
   const router = useRouter();
   const { profileId } = router.query;
 
-  return <p>Post: {profileId}</p>;
+  return(
+    <Profile
+      profileId={profileId}
+    ></Profile>);
 }

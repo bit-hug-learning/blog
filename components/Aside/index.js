@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Post from '../Post';
-import postInfo from 'utils/PostInfo';
 import AsideContainer from './styles';
 import Chip from 'components/Chip/index';
 import useFetchData from 'hooks/useFetchData';
 
 function Aside() {
-  const postSorted = postInfo.sort((a, b) => b.likes - a.likes);
-  const postMostPopular = postSorted[0];
   const { data: hashtags } = useFetchData('hashtags.json', []);
+  const { data: posts } = useFetchData('posts.json', []);
 
   return (
     <AsideContainer>
@@ -25,18 +23,24 @@ function Aside() {
         </section>
         <section className="aside__section">
           <p className="aside__subtitle">Most popular articles:</p>
-          <Post
-            key={postMostPopular.title}
-            type="secondary"
-            image={postMostPopular.image}
-            autor={postMostPopular.autor}
-            date={postMostPopular.date}
-            title={postMostPopular.title}
-            copy={postMostPopular.copy}
-            hashtags={postMostPopular.hashtags}
-            likes={postMostPopular.likes}
-            comments={postMostPopular.comments}
-          />
+          {posts
+            .sort((a, b) => b.likes - a.likes)
+            .filter(post => post == posts[0])
+            .map(post => (
+                  <Post
+                  key={post.title}
+                  type="secondary"
+                  avatar={post.avatar}
+                  autor={post.autor}
+                  date={post.date}
+                  title={post.title}
+                  copy={post.copy}
+                  hashtags={post.hashtags}
+                  likes={post.likes}
+                  comments={post.comments}
+                />
+              ))
+          }
         </section>
       </aside>
     </AsideContainer>
