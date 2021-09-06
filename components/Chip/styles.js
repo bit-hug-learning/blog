@@ -26,12 +26,20 @@ const ChipContainer = styled.span`
     margin: 0 5px;
     line-height: 32px;
     vertical-align: middle;
+    
+    &.postdetail {
+      margin: 0 20px;
+    }
   }
 
   .chip__preppend, .chip__append {
     display: inline-block;
     width: 20px;
     height: 20px;
+
+    &.postdetail {
+      display: none;
+    }
   }
 
   .chip__preppend {

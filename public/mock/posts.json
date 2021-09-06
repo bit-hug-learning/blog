@@ -4,9 +4,10 @@
     "avatar": "/src/assets/icons/avatarGV.png",
     "autor": "Gonzalo Vidal",
     "date": "Aug 11",
+    "image": "https://www.emrerothzerg.com.au/wp-content/uploads/2020/11/what-is-bem-methodology-why-you-should-you-bem-for-your-projects-5da124b6c12d3-612x252-c-default.jpg",
     "title": "Metodología BEM",
-    "copy": "Existen varias metodologías o convenciones para nombrar a las classes en CSS. Entre las principales tenemos a BEM, OOCSS, SMACSS, SUITCSS, etc. ¿Qué es BEM? BEM es una convención o standard para nombrar clases en CSS.¿Porqué utilizar BEM?Primero veamos por qué utilizarlo sobre las otras metodologías mencionadas líneas arriba, es menos confusa que otros métodos (SMACSS) pero aun nos brinda una buena arquitectura(OOCSS) y con una terminología que podemos reconocer. Código en CSS: Para más info ir a: https://gsvidal.github.io/blog/blog.html o encontrarme en Linkedin",
-    "hashtags": ["#CSS", "#HTML"],
+    "copy": "Existen varias metodologías o convenciones para nombrar a las classes en CSS. Entre las principales tenemos a BEM, OOCSS, SMACSS, SUITCSS, etc. ¿Qué es BEM? BEM es una convención o standard para nombrar clases en CSS.¿Porqué utilizar BEM?Primero veamos por qué utilizarlo sobre las otras metodologías mencionadas líneas arriba, es menos confusa que otros métodos (SMACSS) pero aun nos brinda una buena arquitectura(OOCSS) y con una terminología que podemos reconocer. Existen varias metodologías o convenciones para nombrar a las classes en CSS. Entre las principales tenemos a BEM, OOCSS, SMACSS, SUITCSS, etc. ¿Qué es BEM? BEM es una convención o standard para nombrar clases en CSS.¿Porqué utilizar BEM?Primero veamos por qué utilizarlo sobre las otras metodologías mencionadas líneas arriba, es menos confusa que otros métodos (SMACSS) pero aun nos brinda una buena arquitectura(OOCSS) y con una terminología que podemos reconocer. Existen varias metodologías o convenciones para nombrar a las classes en CSS. Entre las principales tenemos a BEM, OOCSS, SMACSS, SUITCSS, etc. ¿Qué es BEM? BEM es una convención o standard para nombrar clases en CSS.¿Porqué utilizar BEM?Primero veamos por qué utilizarlo sobre las otras metodologías mencionadas líneas arriba, es menos confusa que otros métodos (SMACSS) pero aun nos brinda una buena arquitectura(OOCSS) y con una terminología que podemos reconocer. Existen varias metodologías o convenciones para nombrar a las classes en CSS. Entre las principales tenemos a BEM, OOCSS, SMACSS, SUITCSS, etc. ¿Qué es BEM? BEM es una convención o standard para nombrar clases en CSS.¿Porqué utilizar BEM?Primero veamos por qué utilizarlo sobre las otras metodologías mencionadas líneas arriba, es menos confusa que otros métodos (SMACSS) pero aun nos brinda una buena arquitectura(OOCSS) y con una terminología que podemos reconocer. Existen varias metodologías o convenciones para nombrar a las classes en CSS. Entre las principales tenemos a BEM, OOCSS, SMACSS, SUITCSS, etc. ¿Qué es BEM? BEM es una convención o standard para nombrar clases en CSS.¿Porqué utilizar BEM?Primero veamos por qué utilizarlo sobre las otras metodologías mencionadas líneas arriba, es menos confusa que otros métodos (SMACSS) pero aun nos brinda una buena arquitectura(OOCSS) y con una terminología que podemos reconocer. Código en CSS: Para más info ir a: https://gsvidal.github.io/blog/blog.html o encontrarme en Linkedin",
+    "hashtags": ["CSS", "HTML"],
     "likes": 7,
     "comments": [
       {
@@ -34,9 +35,10 @@
     "avatar": "https://avatars.githubusercontent.com/u/67974483?v=4",
     "autor": "Cristian Rodriguez",
     "date": "June 15",
+    "image": "https://www.researchgate.net/publication/326541376/figure/fig3/AS:671946131922947@1537215850961/The-semantic-model-of-creating-an-HTML-page-Typically-web-pages-are-created-in.ppm",
     "title": "HTML Semántico",
     "copy": "Si has creado algún sitio web por tu cuenta, sin importar si te dedicas...",
-    "hashtags": ["#HTML"],
+    "hashtags": ["HTML"],
     "likes": 17,
     "comments": [
       {
@@ -55,9 +57,10 @@
     "avatar": "/src/assets/icons/avatarGV.png",
     "autor": "Gonzalo Vidal",
     "date": "May 23",
+    "image": "https://www.emrerothzerg.com.au/wp-content/uploads/2020/11/what-is-bem-methodology-why-you-should-you-bem-for-your-projects-5da124b6c12d3-612x252-c-default.jpg",
     "title": "Scopes & Closures",
     "copy": "Es el contexto de ejecución, en el cual los valores y expresiones...",
-    "hashtags": ["#Javascript"],
+    "hashtags": ["Javascript"],
     "likes": 15,
     "comments": [
       {
@@ -92,9 +95,10 @@
     "avatar": "/src/assets/icons/avatarGV.png",
     "autor": "Gonzalo Vidal",
     "date": "March 5",
+    "image": "https://www.emrerothzerg.com.au/wp-content/uploads/2020/11/what-is-bem-methodology-why-you-should-you-bem-for-your-projects-5da124b6c12d3-612x252-c-default.jpg",
     "title": "Data Structures - Javascript, a wider vision from a perspective of an ex marine...",
     "copy": "Comprenden colecciones de valores, las relaciones entre ellos y las funciones y operaciones ...",
-    "hashtags": ["#Javascript"],
+    "hashtags": ["Javascript"],
     "likes": 152,
     "comments": [
       {

@@ -7,11 +7,11 @@ function Chip(props) {
       colorBG={props.colorBG}
     >
       <span className="chip">
-        <span className="chip__preppend"></span>
-        <span className="chip__text">
+        <span className={`chip__preppend ${props.type == "postdetail" && "postdetail"}`}></span>
+        <span className={`chip__text ${props.type == "postdetail" && "postdetail"}`}>
           {props.text}
         </span>
-        <span className="chip__append"></span>
+        <span className={`chip__append ${props.type == "postdetail" && "postdetail"}`}></span>
       </span>
     </ChipContainer>
   );

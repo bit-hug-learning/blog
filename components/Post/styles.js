@@ -24,16 +24,26 @@ const PostContainer = styled.div`
       border: 1px solid ${theme.dark.borderPrimary};
       border-radius: 8px;
 
+      &:hover {
+        background-color: ${theme.dark.postPrimaryHover};
+      }
+      
       &.secondary {
         background-color: ${theme.dark.postSecondary};
 
         &:hover {
         background-color: #6B869B;
-      }
+        }
       }
 
-      &:hover {
-        background-color: ${theme.dark.postPrimaryHover};
+      &.postdetail {
+        padding-top: 10px;
+        border: none;
+        background-color: ${theme.dark.secondary};
+
+        &:hover {
+          background-color: ${theme.dark.secondary};
+      }
       }
 
       &__avatar {
@@ -46,6 +56,14 @@ const PostContainer = styled.div`
 
         &.secondary {
           width: 93%;
+        }
+      }
+
+      &__autordate {
+        &.postdetail {
+          position: relative;
+          top: -39px;
+          left: 48px;
         }
       }
 
@@ -67,7 +85,11 @@ const PostContainer = styled.div`
 
       &__hashtags-container {
         display: flex;
-        margin: 15px 0;
+        margin-top: 15px;
+
+        &.postdetail {
+          display: none;
+        }
 
         .post__hashtag {
           margin-bottom: 6px;
@@ -79,6 +101,7 @@ const PostContainer = styled.div`
       &__cta {
         display: flex;
         justify-content: flex-start;
+        margin-top: 15px;
         @media (max-width: 365px) {
           font-size: ${theme.size.s};
         }
