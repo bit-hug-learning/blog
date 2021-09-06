@@ -5,6 +5,7 @@ import useFetchData from 'hooks/useFetchData';
 
 export default function Blog() {
   const { data: posts } = useFetchData('posts.json', []);
+
   return (
     <BlogContainer>
       <main>
@@ -19,7 +20,7 @@ export default function Blog() {
               copy={post.copy}
               hashtags={post.hashtags}
               likes={post.likes}
-              comments={post.comments}
+              comments={post.comments.length}
             />
           ))}
         </section>

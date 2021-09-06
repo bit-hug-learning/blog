@@ -37,7 +37,7 @@ function Aside() {
                   copy={post.copy}
                   hashtags={post.hashtags}
                   likes={post.likes}
-                  comments={post.comments}
+                  comments={post.comments.length}
                 />
               ))
           }

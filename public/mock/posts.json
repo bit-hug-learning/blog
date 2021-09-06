@@ -5,10 +5,29 @@
     "autor": "Gonzalo Vidal",
     "date": "Aug 11",
     "title": "Metodología BEM",
-    "copy": "Existen varias metodologías o convenciones para nombrar a las...",
+    "copy": "Existen varias metodologías o convenciones para nombrar a las classes en CSS. Entre las principales tenemos a BEM, OOCSS, SMACSS, SUITCSS, etc. ¿Qué es BEM? BEM es una convención o standard para nombrar clases en CSS.¿Porqué utilizar BEM?Primero veamos por qué utilizarlo sobre las otras metodologías mencionadas líneas arriba, es menos confusa que otros métodos (SMACSS) pero aun nos brinda una buena arquitectura(OOCSS) y con una terminología que podemos reconocer. Código en CSS: Para más info ir a: https://gsvidal.github.io/blog/blog.html o encontrarme en Linkedin",
     "hashtags": ["#CSS", "#HTML"],
     "likes": 7,
-    "comments": 3
+    "comments": [
+      {
+        "avatar": "",
+        "name": "Rafael García",
+        "date": "Aug 13",
+        "copy": "Pues la verdad a mi me pareció muy chido el artículo, recuerdo cuando Gonzalo lo expuso en vivo y recuerdo que se aplicó al proyecto Codacy.",
+        "likes": 2,
+        "comments": 0
+      },
+      {
+        "avatar": "",
+        "name": "Rafael García 2.0",
+        "date": "Aug 03",
+        "copy": "Soy Rafa del pasado pero de alguna forma soy la versión 2.0...",
+        "likes": 7,
+        "comments": 3
+      }
+
+    ]
+
   },
   { 
     "id": "0002",
@@ -19,7 +38,17 @@
     "copy": "Si has creado algún sitio web por tu cuenta, sin importar si te dedicas...",
     "hashtags": ["#HTML"],
     "likes": 17,
-    "comments": 8
+    "comments": [
+      {
+        "avatar": "",
+        "name": "Rafael García",
+        "date": "Aug 13",
+        "copy": "Pues la verdad a mi me pareció muy chido el artículo, recuerdo cuando Gonzalo lo expuso en vivo y recuerdo que se aplicó al proyecto Codacy.",
+        "likes": 2,
+        "comments": 0
+      }
+
+    ]
   },
   { 
     "id": "0003",
@@ -30,7 +59,33 @@
     "copy": "Es el contexto de ejecución, en el cual los valores y expresiones...",
     "hashtags": ["#Javascript"],
     "likes": 15,
-    "comments": 4
+    "comments": [
+      {
+        "avatar": "",
+        "name": "Rafael García",
+        "date": "Aug 13",
+        "copy": "Pues la verdad a mi me pareció muy chido el artículo, recuerdo cuando Gonzalo lo expuso en vivo y recuerdo que se aplicó al proyecto Codacy.",
+        "likes": 2,
+        "comments": 0
+      },
+      {
+        "avatar": "",
+        "name": "Rafael García 2.0",
+        "date": "Aug 03",
+        "copy": "Soy Rafa del pasado pero de alguna forma soy la versión 2.0...",
+        "likes": 7,
+        "comments": 3
+      },
+      {
+        "avatar": "",
+        "name": "Rafael García 2.0",
+        "date": "Aug 03",
+        "copy": "Soy Rafa del pasado pero de alguna forma soy la versión 2.0...",
+        "likes": 7,
+        "comments": 3
+      }
+
+    ]
   },
   { 
     "id": "0004",
@@ -41,6 +96,24 @@
     "copy": "Comprenden colecciones de valores, las relaciones entre ellos y las funciones y operaciones ...",
     "hashtags": ["#Javascript"],
     "likes": 152,
-    "comments": 151
+    "comments": [
+      {
+        "avatar": "",
+        "name": "Rafael García",
+        "date": "Aug 13",
+        "copy": "Pues la verdad a mi me pareció muy chido el artículo, recuerdo cuando Gonzalo lo expuso en vivo y recuerdo que se aplicó al proyecto Codacy.",
+        "likes": 2,
+        "comments": 0
+      },
+      {
+        "avatar": "",
+        "name": "Rafael García 2.0",
+        "date": "Aug 03",
+        "copy": "Soy Rafa del pasado pero de alguna forma soy la versión 2.0...",
+        "likes": 7,
+        "comments": 3
+      }
+
+    ]
   }
 ]

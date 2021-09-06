@@ -6,6 +6,7 @@ import Loader from 'components/Loader/index';
 
 function Creator(props) {
   const { data: posts } = useFetchData('posts.json', []);
+  console.log(posts)
   const { data: creators } = useFetchData('creators.json', []);
   const creator = creators.filter(creator => creator.route === props.id)[0];
 
@@ -45,7 +46,7 @@ function Creator(props) {
                 copy={post.copy}
                 hashtags={post.hashtags}
                 likes={post.likes}
-                comments={post.comments}
+                comments={post.comments.length}
               ></Post>
             )
           }
