@@ -2,6 +2,11 @@ import React from 'react';
 import PostContainer from 'components/Post/styles';
 
 function Post(props) {
+
+  //Formating copy data to be concise for the posts cards
+  const copyFormated = props.copy.split(" ").filter((el,i) => i < 18).join(" ") + "...";
+
+
   return(
     <PostContainer>
       <article className={`post ${props.type == "secondary" && "secondary"} ${props.type == "postdetail" && "postdetail"}`}>
@@ -15,7 +20,7 @@ function Post(props) {
           </div>
 
           <h2 className="post__title"><a href="">{props.title}</a></h2>
-          <p className="post__copy">{props.copy}
+          <p className="post__copy">{props.type == 'postdetail' ? props.copy : copyFormated}
           </p>
           
           

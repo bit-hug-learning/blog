@@ -6,7 +6,7 @@ import Loader from 'components/Loader/index';
 
 function Creator(props) {
   const { data: posts } = useFetchData('posts.json', []);
-  console.log(posts)
+  // console.log(posts)
   const { data: creators } = useFetchData('creators.json', []);
   const creator = creators.filter(creator => creator.route === props.id)[0];
 

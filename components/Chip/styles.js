@@ -29,6 +29,9 @@ const ChipContainer = styled.span`
     
     &.postdetail {
       margin: 0 20px;
+      height: 0;
+      position: relative;
+      top: -15px;
     }
   }
 

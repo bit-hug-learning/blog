@@ -39,10 +39,10 @@ const PostContainer = styled.div`
       &.postdetail {
         padding-top: 10px;
         border: none;
-        background-color: ${theme.dark.secondary};
+        background-color: ${theme.dark.postPrimary};
 
         &:hover {
-          background-color: ${theme.dark.secondary};
+          background-color: ${theme.dark.postPrimary};
       }
       }
 
@@ -61,6 +61,7 @@ const PostContainer = styled.div`
 
       &__autordate {
         &.postdetail {
+          display: inline-block;
           position: relative;
           top: -39px;
           left: 48px;
