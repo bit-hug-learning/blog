@@ -6,6 +6,7 @@ function Post(props) {
   const copyFormated = props.copy.split(" ").filter((el,i) => i < 18).join(" ") + "...";
   const autorFormated = props.autor.split(" ").join("").toLowerCase();
 
+
   return(
     <PostContainer>
       <article className={`post ${props.type == "secondary" && "secondary"} ${props.type == "postdetail" && "postdetail"}`}>
@@ -19,8 +20,9 @@ function Post(props) {
           </div>
 
           <h2 className="post__title"><a href="">{props.title}</a></h2>
-          <p className={`post__copy ${props.type == "postdetail" && "postdetail"}`}>{props.type == 'postdetail' ? props.copy : copyFormated}
-          </p>
+          {/* <p className={`post__copy ${props.type == "postdetail" && "postdetail"}`}>{props.type == 'postdetail' ? props.copy : copyFormated}
+          </p> */}
+          <div dangerouslySetInnerHTML={{__html: props.copy}}></div>
           
           
           <div className={`post__hashtags-container ${props.type == "postdetail" && "postdetail"}`}>
