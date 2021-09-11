@@ -2,15 +2,14 @@ import React from 'react';
 import PostContainer from 'components/Post/styles';
 
 function Post(props) {
-
   //Formating copy data to be concise for the posts cards
   const copyFormated = props.copy.split(" ").filter((el,i) => i < 18).join(" ") + "...";
-
+  const autorFormated = props.autor.split(" ").join("").toLowerCase();
 
   return(
     <PostContainer>
       <article className={`post ${props.type == "secondary" && "secondary"} ${props.type == "postdetail" && "postdetail"}`}>
-        <a href="">
+        <a href={`/profile/${autorFormated}`}>
           <img className={`post__avatar ${props.type == "secondary" && "secondary"} ${props.type == "postdetail" && "postdetail"}`} src={props.avatar} alt="avatar" width="38" height="38"/>
         </a>
         <section className={`post__body ${props.type == "secondary" && "secondary"}`}>
@@ -20,7 +19,7 @@ function Post(props) {
           </div>
 
           <h2 className="post__title"><a href="">{props.title}</a></h2>
-          <p className="post__copy">{props.type == 'postdetail' ? props.copy : copyFormated}
+          <p className={`post__copy ${props.type == "postdetail" && "postdetail"}`}>{props.type == 'postdetail' ? props.copy : copyFormated}
           </p>
           
           

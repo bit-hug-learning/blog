@@ -11,7 +11,7 @@
     "likes": 7,
     "comments": [
       {
-        "avatar": "",
+        "avatar": "https://avatars.githubusercontent.com/u/37715000?v=4",
         "name": "Rafael García",
         "date": "Aug 13",
         "copy": "Pues la verdad a mi me pareció muy chido el artículo, recuerdo cuando Gonzalo lo expuso en vivo y recuerdo que se aplicó al proyecto Codacy.",
@@ -19,12 +19,20 @@
         "comments": 0
       },
       {
-        "avatar": "",
-        "name": "Rafael García 2.0",
+        "avatar": "https://avatars.githubusercontent.com/u/37715000?v=4",
+        "name": "Rafael García",
         "date": "Aug 03",
         "copy": "Soy Rafa del pasado pero de alguna forma soy la versión 2.0...",
         "likes": 7,
         "comments": 3
+      },
+      {
+        "avatar": "https://avatars.githubusercontent.com/u/67974483?v=4",
+        "name": "Cristian Rodriguez",
+        "date": "Aug 01",
+        "copy": "Soy Cristian je",
+        "likes": 5,
+        "comments": 1
       }
 
     ]
@@ -42,7 +50,7 @@
     "likes": 17,
     "comments": [
       {
-        "avatar": "",
+        "avatar": "https://avatars.githubusercontent.com/u/37715000?v=4",
         "name": "Rafael García",
         "date": "Aug 13",
         "copy": "Pues la verdad a mi me pareció muy chido el artículo, recuerdo cuando Gonzalo lo expuso en vivo y recuerdo que se aplicó al proyecto Codacy.",
@@ -57,14 +65,14 @@
     "avatar": "/src/assets/icons/avatarGV.png",
     "autor": "Gonzalo Vidal",
     "date": "May 23",
-    "image": "https://www.emrerothzerg.com.au/wp-content/uploads/2020/11/what-is-bem-methodology-why-you-should-you-bem-for-your-projects-5da124b6c12d3-612x252-c-default.jpg",
+    "image": "https://i.postimg.cc/fRc02yrM/df.png",
     "title": "Scopes & Closures",
     "copy": "Es el contexto de ejecución, en el cual los valores y expresiones pueden ser accedidos o referenciados",
     "hashtags": ["Javascript"],
     "likes": 15,
     "comments": [
       {
-        "avatar": "",
+        "avatar": "https://avatars.githubusercontent.com/u/37715000?v=4",
         "name": "Rafael García",
         "date": "Aug 13",
         "copy": "Pues la verdad a mi me pareció muy chido el artículo, recuerdo cuando Gonzalo lo expuso en vivo y recuerdo que se aplicó al proyecto Codacy.",
@@ -72,7 +80,7 @@
         "comments": 0
       },
       {
-        "avatar": "",
+        "avatar": "https://avatars.githubusercontent.com/u/37715000?v=4",
         "name": "Rafael García 2.0",
         "date": "Aug 03",
         "copy": "Soy Rafa del pasado pero de alguna forma soy la versión 2.0...",
@@ -80,8 +88,8 @@
         "comments": 3
       },
       {
-        "avatar": "",
-        "name": "Rafael García 2.0",
+        "avatar": "https://avatars.githubusercontent.com/u/67974483?v=4",
+        "name": "Cristian Rodriguez",
         "date": "Aug 03",
         "copy": "Soy Rafa del pasado pero de alguna forma soy la versión 2.0...",
         "likes": 7,

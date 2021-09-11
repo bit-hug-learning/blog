@@ -13,6 +13,11 @@ const CreatorContainer = styled.div`
     border-radius: 8px;
     color: white;
 
+    &.postdetail {
+      width: 375px;
+      margin: 24px 16px 16px;
+    }
+
     &__info {
       margin: 25px;
       margin-top: 80px;
@@ -70,7 +75,6 @@ const CreatorContainer = styled.div`
         transition: transform .1s ease-in;
       }
     }
-
   }
 `;
 

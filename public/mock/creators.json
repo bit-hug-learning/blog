@@ -31,7 +31,7 @@
     "route": "cristianrodriguez",
     "autor": "Cristian Rodriguez",
     "avatar": "https://avatars.githubusercontent.com/u/67974483?v=4",
-    "posts": "0002",
+    "posts": ["0002"],
     "description": "I'm passionate about precise and meaningful web pages. I stand to bring Tech and Culture together.",
     "location": "Colombia",
     "job": "Front-End Developer at Globant",

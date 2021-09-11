@@ -37,7 +37,8 @@ const PostContainer = styled.div`
       }
 
       &.postdetail {
-        padding-top: 10px;
+        padding: 15px;
+        margin: 0px;
         border: none;
         background-color: ${theme.dark.postPrimary};
 
@@ -49,19 +50,25 @@ const PostContainer = styled.div`
       &__avatar {
         margin: 3px 5px 0px 8px;
         border-radius: 50%;
+
+        &.postdetail {
+          width: 38px;
+          height: 38px;
+          margin-left: 5px;
+        }
       }
 
       &__body {
         margin: 0 5px;
 
         &.secondary {
-          width: 93%;
+          width: 80%;
         }
       }
 
       &__autordate {
         &.postdetail {
-          display: inline-block;
+          display: inline;
           position: relative;
           top: -39px;
           left: 48px;
@@ -82,6 +89,11 @@ const PostContainer = styled.div`
 
       &__copy {
         min-height: 42px;
+
+        &.postdetail {
+          position: relative;
+          top: -20px;
+        }
       }
 
       &__hashtags-container {
@@ -102,7 +114,7 @@ const PostContainer = styled.div`
       &__cta {
         display: flex;
         justify-content: flex-start;
-        margin-top: 15px;
+        margin-top: 10px;
         @media (max-width: 365px) {
           font-size: ${theme.size.s};
         }
@@ -112,20 +124,20 @@ const PostContainer = styled.div`
           display: flex;
           align-items: center;
           margin-right: 20px;
-
-          @media (min-width: ${theme.breakpoints.md}) {
-            margin-right: 50px;
+          @media (min-width: ${theme.breakpoints.sm}) {
+            margin-right: 12.5%;
           }
-          @media (min-width: ${theme.breakpoints.lg}) {
-            margin-right: 80px;
-            
+          @media (min-width: ${theme.breakpoints.md}) {
+            margin-right: 100px;
           }
         }
 
         .post__like.secondary, .post__comment.secondary {
-            @media (min-width: ${theme.breakpoints.sm}) {
+            
             margin-right: 10px;
-            font-size: 1.2rem;    
+            font-size: 1.2rem;
+            @media (min-width: ${theme.breakpoints.sm}) {
+              margin-right: 15%;   
             }
         }
 

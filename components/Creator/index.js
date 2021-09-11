@@ -6,14 +6,13 @@ import Loader from 'components/Loader/index';
 
 function Creator(props) {
   const { data: posts } = useFetchData('posts.json', []);
-  // console.log(posts)
   const { data: creators } = useFetchData('creators.json', []);
   const creator = creators.filter(creator => creator.route === props.id)[0];
 
   if (creator) {
     return (
       <CreatorContainer>
-        <section className="creator">
+        <section className={`creator ${props.type == "postdetail" && "postdetail"}`}>
           <div className="creator__info">
             <img className="creator__avatar" src={creator.avatar} alt={creator.autor} />
             <h1 className="creator__autor">{creator.autor}</h1>
@@ -54,12 +53,10 @@ function Creator(props) {
       </CreatorContainer>
     );
   } else {
-    return (
-      <Loader></Loader>
-    );
-  }
-
-
+      return (
+        <Loader></Loader>
+      );
+    }
 }
 
 export default Creator;

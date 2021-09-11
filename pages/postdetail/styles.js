@@ -12,16 +12,17 @@ const PostDetailContainer = styled.div`
     justify-content: center;
   }
 
-
   .postdetail {
     display: flex;
     flex-direction: column;
-    @media (max-width: 611px) {
-
-      max-width: 100%;
-    }
+    width: 100%;
     max-width: 714px;
     background-color: ${theme.dark.postPrimary};
+
+    &__image {
+      height: 294px;
+      object-fit: cover;
+    }
 
     &__title {
       margin: 15px 20px 5px;
@@ -34,26 +35,21 @@ const PostDetailContainer = styled.div`
     }
 
     &__text {
-      margin-left: 20px;
+      margin: 20px;
       color: white;
       font-size: ${theme.size.m};
       font-weight: bold;
     }
-
   }
 
   .creator {
     display: none;
     @media (min-width: 1280px) {
-      max-width: 375px;
-      margin: 16px;
       display: inline-block;
       position: relative;
       top: 10px;
     }
-
   }
-
 `;
 
 export default PostDetailContainer;
