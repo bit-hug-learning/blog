@@ -18,6 +18,7 @@ const theme = {
     text: '#FFFFFF',
     textSecondary: '#817F7F',
     logosHeader: '#979797',
+    lightBlue: '#B1D0FF',
   },
   size: {
     s: '1.2rem',
