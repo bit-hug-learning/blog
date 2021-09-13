@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import theme from '../../styles/theme';
 
 export const ExampleContainer = styled.div`
   background: red;
@@ -12,7 +13,7 @@ export const ExampleContainer = styled.div`
     color: azure;
   }
 
-  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+  @media (max-width: ${theme.breakpoints.md}) {
     background: green;
   }
 `;
