@@ -11,6 +11,7 @@
     "likes": 7,
     "comments": [
       {
+        "id": 1,
         "avatar": "https://avatars.githubusercontent.com/u/37715000?v=4",
         "name": "Rafael García",
         "date": "Aug 13",
@@ -19,6 +20,7 @@
         "comments": 0
       },
       {
+        "id": 2,
         "avatar": "https://avatars.githubusercontent.com/u/37715000?v=4",
         "name": "Rafael García",
         "date": "Aug 03",
@@ -27,6 +29,7 @@
         "comments": 3
       },
       {
+        "id": 3,
         "avatar": "https://avatars.githubusercontent.com/u/67974483?v=4",
         "name": "Cristian Rodriguez",
         "date": "Aug 01",
@@ -50,6 +53,7 @@
     "likes": 17,
     "comments": [
       {
+        "id": 1,
         "avatar": "https://avatars.githubusercontent.com/u/37715000?v=4",
         "name": "Rafael García",
         "date": "Aug 13",
@@ -72,6 +76,7 @@
     "likes": 15,
     "comments": [
       {
+        "id": 1,
         "avatar": "https://avatars.githubusercontent.com/u/37715000?v=4",
         "name": "Rafael García",
         "date": "Aug 13",
@@ -80,6 +85,7 @@
         "comments": 0
       },
       {
+        "id": 2,
         "avatar": "https://avatars.githubusercontent.com/u/37715000?v=4",
         "name": "Rafael García 2.0",
         "date": "Aug 03",
@@ -88,6 +94,7 @@
         "comments": 3
       },
       {
+        "id": 3,
         "avatar": "https://avatars.githubusercontent.com/u/67974483?v=4",
         "name": "Cristian Rodriguez",
         "date": "Aug 03",
@@ -110,6 +117,7 @@
     "likes": 152,
     "comments": [
       {
+        "id": 1,
         "avatar": "",
         "name": "Rafael García",
         "date": "Aug 13",
@@ -118,6 +126,7 @@
         "comments": 0
       },
       {
+        "id": 2,
         "avatar": "",
         "name": "Rafael García 2.0",
         "date": "Aug 03",

@@ -7,8 +7,16 @@ function actions(state, setState) {
     });
   };
 
+  const setHashtags = (hashtags) => {
+    setState({
+      ...state,
+      hashtags,
+    });
+  };
+
   return {
     toggleSidenav,
+    hashtags,
     setGlobalState: setState,
   };
 }

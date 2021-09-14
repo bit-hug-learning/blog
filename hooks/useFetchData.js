@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 
-const BASE_URL = '/mock/';
+const BASE_URL = 'https://rafaelg13.sg-host.com/wp-json/wp/v2/';
+
+// const BASE_URL = '/mock/';
 
 function useFetchData(url, defState) {
   const [data, setData] = useState(defState);

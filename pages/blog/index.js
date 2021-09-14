@@ -3,14 +3,30 @@ import Aside from 'components/Aside/index';
 import BlogContainer from './styles';
 import useFetchData from 'hooks/useFetchData';
 
-export default function Blog() {
-  const { data: posts } = useFetchData('posts.json', []);
+const url = 'posts?_embed=author';
 
+const useFetchPosts = () => {
+  const { data: posts } = useFetchData(url, []);
+  return posts.map((post) => ({
+    id: post.id,
+    date: post.date,
+    autor: post._embedded.author[0].name,
+    avatar: post._embedded.author[0].avatar_urls['48'],
+    copy: post.content.rendered,
+    hashtags: ['CSS', 'HTML'],
+    title: post.title.rendered,
+    comments: [],
+    likes: 2,
+  }));
+};
+
+export default function Blog() {
+  const posts = useFetchPosts();
   return (
     <BlogContainer>
       <main>
         <section>
-          {posts.map((post) => (
+          {posts?.map((post) => (
             <Post
               key={post.title}
               avatar={post.avatar}

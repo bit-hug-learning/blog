@@ -3,6 +3,7 @@ import actions from './actions';
 
 const initialState = {
   sidenavOpen: false,
+  hashtags: [],
 };
 
 const GlobalContext = React.createContext({

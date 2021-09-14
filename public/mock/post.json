@@ -1,0 +1,41 @@
+{ 
+  "id": "0001",
+  "avatar": "/src/assets/icons/avatarGV.png",
+  "autor": "Gonzalo Vidal",
+  "date": "Aug 11",
+  "image": "https://www.emrerothzerg.com.au/wp-content/uploads/2020/11/what-is-bem-methodology-why-you-should-you-bem-for-your-projects-5da124b6c12d3-612x252-c-default.jpg",
+  "title": "Metodología BEM",
+  "copy": "<h1>Existen varias metodologías o convenciones para nombrar a las classes en CSS. Entre las principales tenemos a BEM, OOCSS, SMACSS, SUITCSS, etc.</h1> ¿Qué es BEM? BEM es una convención o standard para nombrar clases en CSS.¿Porqué utilizar BEM?Primero veamos por qué utilizarlo sobre las otras metodologías mencionadas líneas arriba, es menos confusa que otros métodos (SMACSS) pero aun nos brinda una buena arquitectura(OOCSS) y con una terminología que podemos reconocer. Existen varias metodologías o convenciones para nombrar a las classes en CSS. Entre las principales tenemos a BEM, OOCSS, SMACSS, SUITCSS, etc. ¿Qué es BEM? BEM es una convención o standard para nombrar clases en CSS.¿Porqué utilizar BEM?Primero veamos por qué utilizarlo sobre las otras metodologías mencionadas líneas arriba, es menos confusa que otros métodos (SMACSS) pero aun nos brinda una buena arquitectura(OOCSS) y con una terminología que podemos reconocer. Existen varias metodologías o convenciones para nombrar a las classes en CSS. Entre las principales tenemos a BEM, OOCSS, SMACSS, SUITCSS, etc. ¿Qué es BEM? BEM es una convención o standard para nombrar clases en CSS.¿Porqué utilizar BEM?Primero veamos por qué utilizarlo sobre las otras metodologías mencionadas líneas arriba, es menos confusa que otros métodos (SMACSS) pero aun nos brinda una buena arquitectura(OOCSS) y con una terminología que podemos reconocer. Existen varias metodologías o convenciones para nombrar a las classes en CSS. Entre las principales tenemos a BEM, OOCSS, SMACSS, SUITCSS, etc. ¿Qué es BEM? BEM es una convención o standard para nombrar clases en CSS.¿Porqué utilizar BEM?Primero veamos por qué utilizarlo sobre las otras metodologías mencionadas líneas arriba, es menos confusa que otros métodos (SMACSS) pero aun nos brinda una buena arquitectura(OOCSS) y con una terminología que podemos reconocer. Existen varias metodologías o convenciones para nombrar a las classes en CSS. Entre las principales tenemos a BEM, OOCSS, SMACSS, SUITCSS, etc. ¿Qué es BEM? BEM es una convención o standard para nombrar clases en CSS.¿Porqué utilizar BEM?Primero veamos por qué utilizarlo sobre las otras metodologías mencionadas líneas arriba, es menos confusa que otros métodos (SMACSS) pero aun nos brinda una buena arquitectura(OOCSS) y con una terminología que podemos reconocer. Código en CSS: Para más info ir a: https://gsvidal.github.io/blog/blog.html o encontrarme en Linkedin",
+  "hashtags": ["CSS", "HTML"],
+  "likes": 7,
+  "comments": [
+    {
+      "id": 1,
+      "avatar": "https://avatars.githubusercontent.com/u/37715000?v=4",
+      "name": "Rafael García",
+      "date": "Aug 13",
+      "copy": "Pues la verdad a mi me pareció muy chido el artículo, recuerdo cuando Gonzalo lo expuso en vivo y recuerdo que se aplicó al proyecto Codacy.",
+      "likes": 2,
+      "comments": 0
+    },
+    {
+      "id": 2,
+      "avatar": "https://avatars.githubusercontent.com/u/37715000?v=4",
+      "name": "Rafael García",
+      "date": "Aug 03",
+      "copy": "Soy Rafa del pasado pero de alguna forma soy la versión 2.0...",
+      "likes": 7,
+      "comments": 3
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/67974483?v=4",
+      "name": "Cristian Rodriguez",
+      "date": "Aug 01",
+      "copy": "Soy Cristian je",
+      "likes": 5,
+      "comments": 1
+    }
+
+  ]
+}
