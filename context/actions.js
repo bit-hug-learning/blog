@@ -16,7 +16,7 @@ function actions(state, setState) {
 
   return {
     toggleSidenav,
-    hashtags,
+    setHashtags,
     setGlobalState: setState,
   };
 }

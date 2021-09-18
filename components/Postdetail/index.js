@@ -40,7 +40,6 @@ export default function PostDetail(props) {
     return <Loader />;
   }
 
-  console.log(poster.comments);
   let h2 = [];
   const hc = hashtagschip.filter((hashc) => {
     let flag = false;
@@ -60,8 +59,6 @@ export default function PostDetail(props) {
       'https://media-exp1.licdn.com/dms/image/C4E03AQEQXuvjMS8s6g/profile-displayphoto-shrink_800_800/0/1583943990404?e=1636588800&v=beta&t=wwmw7vWpHiYkHIUWrzWgE00DBihQ_YiHDJFg5GKbZIM',
     name: 'Kevin Malaver',
   };
-
-  console.log(poster.comments.length);
 
   return (
     <PostDetailContainer>

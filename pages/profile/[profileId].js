@@ -1,12 +1,15 @@
+import Creator from 'components/Creator/index';
 import { useRouter } from 'next/router';
-import Profile from './index';
 
 export default function ProfileId() {
   const router = useRouter();
   const { profileId } = router.query;
 
-  return(
-    <Profile
-      profileId={profileId}
-    ></Profile>);
+  return (
+    <ProfileContainer>
+      <Creator id={profileId}></Creator>
+    </ProfileContainer>
+  );
 }
+
+const ProfileContainer = styled.div``;

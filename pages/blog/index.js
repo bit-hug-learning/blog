@@ -1,29 +1,39 @@
 import Post from 'components/Post/index';
 import Aside from 'components/Aside/index';
-import BlogContainer from './styles';
-import useFetchData from 'hooks/useFetchData';
-
-const url = 'posts?_embed=author';
-
-const useFetchPosts = () => {
-  const { data: posts } = useFetchData(url, []);
-  return posts.map((post) => ({
-    id: post.id,
-    date: post.date,
-    autor: post._embedded.author[0].name,
-    avatar: post._embedded.author[0].avatar_urls['48'],
-    copy: post.content.rendered,
-    hashtags: ['CSS', 'HTML'],
-    title: post.title.rendered,
-    comments: [],
-    likes: 2,
-  }));
-};
+import SEO from 'components/SEO/index';
+import { useEffect, useState } from 'react';
+import getData from 'utils/getData';
+import styled from 'styled-components';
+import { transformPost } from 'utils/transforms';
 
 export default function Blog() {
-  const posts = useFetchPosts();
+  const [offset, setOffset] = useState(0);
+  const [posts, setPosts] = useState([]);
+  const [filters, setFilters] = useState([]);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const data = await getData('posts', {
+          _embed: 'author',
+          order: 'desc',
+          orderBy: 'date',
+          per_page: 10,
+          offset: offset,
+          categories: filters,
+        });
+        const posts = data.map(transformPost);
+        setPosts(posts);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchPosts();
+  }, [offset, filters]);
+
   return (
     <BlogContainer>
+      <SEO title="Blog Bithug" />
       <main>
         <section>
           {posts?.map((post) => (
@@ -45,3 +55,12 @@ export default function Blog() {
     </BlogContainer>
   );
 }
+
+const BlogContainer = styled.div`
+  main {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+`;
