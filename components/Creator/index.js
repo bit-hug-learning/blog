@@ -1,13 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import useFetchData from 'hooks/useFetchData';
 import CreatorContainer from './styles';
 import Post from 'components/Post/index';
 import Loader from 'components/Loader/index';
 
 function Creator(props) {
-  const { data: posts } = useFetchData('posts.json', []);
-  const { data: creators } = useFetchData('creators.json', []);
-  const creator = creators.filter((creator) => creator.route === props.id)[0];
+  const { creator } = props;
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const data = await getData('posts', {
+          _embed: 'author',
+          order: 'desc',
+          orderBy: 'date',
+          per_page: 10,
+          author: creator.id,
+        });
+        const posts = data.map(transformPost);
+        setPosts(posts);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchPosts();
+  }, [creator.id]);
 
   if (creator) {
     return (
@@ -19,9 +37,9 @@ function Creator(props) {
             <img
               className="creator__avatar"
               src={creator.avatar}
-              alt={creator.autor}
+              alt={creator.name}
             />
-            <h1 className="creator__autor">{creator.autor}</h1>
+            <h1 className="creator__author">{creator.name}</h1>
             <p className="creator__description">{creator.description}</p>
             <h2 className="creator__header creator__header--location">
               Locación:
@@ -44,22 +62,20 @@ function Creator(props) {
             </ul>
             <p>Últimos artículos de Gonzalo en Bit Blog:</p>
           </div>
-          {posts
-            .filter((post) => post.autor === creator.autor)
-            .map((post) => (
-              <Post
-                key={post.title}
-                type="secondary"
-                avatar={post.avatar}
-                autor={post.autor}
-                date={post.date}
-                title={post.title}
-                copy={post.copy}
-                hashtags={post.hashtags}
-                likes={post.likes}
-                comments={post.comments.length}
-              ></Post>
-            ))}
+          {posts.map((post) => (
+            <Post
+              key={post.title}
+              type="secondary"
+              avatar={post.avatar}
+              author={post.author}
+              date={post.date}
+              title={post.title}
+              copy={post.copy}
+              hashtags={post.hashtags}
+              likes={post.likes}
+              comments={post.comments.length}
+            ></Post>
+          ))}
         </section>
       </CreatorContainer>
     );

@@ -3,12 +3,12 @@ import PostContainer from 'components/Post/styles';
 
 function Post(props) {
   //Formating copy data to be concise for the posts cards
-  const copyFormated =
-    props.copy
-      .split(' ')
-      .filter((el, i) => i < 18)
-      .join(' ') + '...';
-  const autorFormated = props.autor.split(' ').join('').toLowerCase();
+  const copyFormated = props.copy;
+  // props.copy
+  //   .split(' ')
+  //   .filter((el, i) => i < 18)
+  //   .join(' ') + '...';
+  const authorFormated = props.author.split(' ').join('').toLowerCase();
 
   return (
     <PostContainer>
@@ -17,7 +17,7 @@ function Post(props) {
           props.type == 'postdetail' && 'postdetail'
         }`}
       >
-        <a href={`/profile/${autorFormated}`}>
+        <a href={`/profile/${authorFormated}`}>
           <img
             className={`post__avatar ${
               props.type == 'secondary' && 'secondary'
@@ -32,12 +32,12 @@ function Post(props) {
           className={`post__body ${props.type == 'secondary' && 'secondary'}`}
         >
           <div
-            className={`post__autordate ${
+            className={`post__authordate ${
               props.type == 'postdetail' && 'postdetail'
             }`}
           >
-            <a href="" className="post__autor">
-              {props.autor}
+            <a href="" className="post__author">
+              {props.author}
             </a>
             <p className="post__date">{props.date}</p>
           </div>

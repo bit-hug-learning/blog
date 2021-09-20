@@ -5,70 +5,44 @@ import Chip from 'components/Chip/index';
 import PostDetailContainer from './styles';
 import Creator from 'components/Creator/index';
 import Comment from 'components/Comment/index';
-
-function transformPost(backendPost) {
-  return {
-    id: backendPost.id,
-    copy: backendPost.content.rendered,
-  };
-}
+import { useEffect } from 'react';
+import getData from 'utils/getData';
+import { transformCreator, transformPost } from 'utils/transforms';
+import { useState } from 'react';
 
 export default function PostDetail(props) {
-  const { data: backPost } = useFetchData('posts/28', []);
-  const { data: creators } = useFetchData('creators.json', []);
-  const { data: hashtagschip } = useFetchData('hashtags', []);
+  const [post, setPost] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const hc = [];
 
-  const poster = transformPost(backPost);
+  console.log(props);
 
-  if (!posts || !creators) {
-    return <Loader />;
-  }
-
-  if (!poster) {
-    return <Loader />;
-  }
-
-  const creatorPost = creators.filter((creator) => {
-    for (let i = 0; i < creator.posts.length; i++) {
-      if (creator.posts[i] == poster.id) {
-        return creator;
+  useEffect(() => {
+    const fetchPost = async () => {
+      try {
+        setLoading(true);
+        const data = await getData(`posts/${props.postDetailId}`);
+        const author = await getData(`users/${data.author}`);
+        const post = transformPost(data);
+        post.creator = transformCreator(author);
+        setPost(post);
+        setLoading(false);
+      } catch (error) {
+        console.log(error);
       }
-    }
-  })[0];
+    };
+    fetchPost();
+  }, [props.postDetailId]);
 
-  if (!creatorPost) {
+  if (loading) {
     return <Loader />;
   }
-
-  let h2 = [];
-  const hc = hashtagschip.filter((hashc) => {
-    let flag = false;
-    for (let i = 0; i < poster.hashtags.length; i++) {
-      if (hashc.text == poster.hashtags[i]) {
-        h2.push(hashc.text);
-        flag = true;
-      }
-    }
-    //if a hashtag element is include in the poster.hastag then the flag turn true and is filtered.
-    return flag;
-  });
-
-  // console.log(creatorPost.route)
-  const user = {
-    avatar:
-      'https://media-exp1.licdn.com/dms/image/C4E03AQEQXuvjMS8s6g/profile-displayphoto-shrink_800_800/0/1583943990404?e=1636588800&v=beta&t=wwmw7vWpHiYkHIUWrzWgE00DBihQ_YiHDJFg5GKbZIM',
-    name: 'Kevin Malaver',
-  };
 
   return (
     <PostDetailContainer>
       <section className="postdetail">
-        <img
-          className="postdetail__image"
-          src={poster.image}
-          alt={poster.title}
-        />
-        <h1 className="postdetail__title">{poster.title}</h1>
+        <img className="postdetail__image" src={post.image} alt={post.title} />
+        <h1 className="postdetail__title">{post.title}</h1>
         <p className="postdetail__hashtag">
           {hc.map((h) => (
             <Chip
@@ -80,20 +54,20 @@ export default function PostDetail(props) {
           ))}
         </p>
         <Post
-          key={poster.title}
+          key={post.title}
           type="postdetail"
-          avatar={poster.avatar}
-          autor={poster.autor}
-          date={poster.date}
+          avatar={post.avatar}
+          author={post.author}
+          date={post.date}
           // title={post.title}
-          copy={poster.copy}
-          hashtags={poster.hashtags}
-          likes={poster.likes}
-          comments={poster.comments.length}
+          copy={post.copy}
+          hashtags={post.hashtags}
+          likes={post.likes}
+          comments={post.comments.length}
         ></Post>
         <p className="postdetail__text">Comentarios:</p>
-        <Comment type="add-comment" avatar={user.avatar}></Comment>
-        {poster.comments.map((comment) => (
+        <Comment type="add-comment" avatar={post.avatar}></Comment>
+        {post.comments.map((comment) => (
           <Comment
             key={comment.id}
             avatar={comment.avatar}
@@ -106,7 +80,7 @@ export default function PostDetail(props) {
         ))}
       </section>
       <section className="creator">
-        <Creator id={creatorPost.route} type="postdetail"></Creator>
+        <Creator creator={post.creator} type="postdetail"></Creator>
       </section>
     </PostDetailContainer>
   );

@@ -2,7 +2,7 @@
   {
     "id": "0001",
     "route": "gonzalovidal",
-    "autor": "Gonzalo Vidal",
+    "author": "Gonzalo Vidal",
     "avatar": "/src/assets/icons/avatarGV.png",
     "posts": ["0001", "0003"],
     "description": "Entusiasta y coleccionista de hardware y también del software, en particular del Desarrollo Web. Front-End. Inicié este viaje en Julio del 2020.",
@@ -29,7 +29,7 @@
   {
     "id": "0002",
     "route": "cristianrodriguez",
-    "autor": "Cristian Rodriguez",
+    "author": "Cristian Rodriguez",
     "avatar": "https://avatars.githubusercontent.com/u/67974483?v=4",
     "posts": ["0002"],
     "description": "I'm passionate about precise and meaningful web pages. I stand to bring Tech and Culture together.",

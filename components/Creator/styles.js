@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import theme from "styles/theme";
+import styled from 'styled-components';
+import theme from 'styles/theme';
 
 const CreatorContainer = styled.div`
   .creator {
     position: relative;
     width: 100vw;
     max-width: 714px;
-    margin: 100px auto ;
+    margin: 100px auto;
     font-size: ${theme.size.m};
     background-color: ${theme.dark.primary};
     border: 1px solid ${theme.dark.borderSecondary};
@@ -26,14 +26,14 @@ const CreatorContainer = styled.div`
     &__avatar {
       position: absolute;
       top: -45px;
-      left: calc( 50% - 45px);
+      left: calc(50% - 45px);
       width: 90px;
       height: 90px;
       border: 1px solid ${theme.dark.borderSecondary};
       border-radius: 50%;
     }
 
-    &__autor {
+    &__author {
       text-align: center;
       margin: 15px 0;
       font-size: ${theme.size.xl};
@@ -47,7 +47,7 @@ const CreatorContainer = styled.div`
 
     &__header {
       margin: 10px 0 5px;
-      font-size: ${theme.size.m}
+      font-size: ${theme.size.m};
     }
 
     &__contact {
@@ -72,7 +72,7 @@ const CreatorContainer = styled.div`
       &:hover {
         filter: invert(100%) brightness(0) saturate(100%);
         transform: scale(1.5, 1.5);
-        transition: transform .1s ease-in;
+        transition: transform 0.1s ease-in;
       }
     }
   }

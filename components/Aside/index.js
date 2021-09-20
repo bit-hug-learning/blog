@@ -54,7 +54,7 @@ function Aside() {
               key={post.title}
               type="secondary"
               avatar={post.avatar}
-              autor={post.autor}
+              author={post.author}
               date={post.date}
               title={post.title}
               copy={post.copy}

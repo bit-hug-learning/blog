@@ -40,7 +40,7 @@ export default function Blog() {
             <Post
               key={post.title}
               avatar={post.avatar}
-              autor={post.autor}
+              author={post.author}
               date={post.date}
               title={post.title}
               copy={post.copy}

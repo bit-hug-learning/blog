@@ -2,7 +2,7 @@
   { 
     "id": "0001",
     "avatar": "/src/assets/icons/avatarGV.png",
-    "autor": "Gonzalo Vidal",
+    "author": "Gonzalo Vidal",
     "date": "Aug 11",
     "image": "https://www.emrerothzerg.com.au/wp-content/uploads/2020/11/what-is-bem-methodology-why-you-should-you-bem-for-your-projects-5da124b6c12d3-612x252-c-default.jpg",
     "title": "Metodología BEM",
@@ -44,7 +44,7 @@
   { 
     "id": "0002",
     "avatar": "https://avatars.githubusercontent.com/u/67974483?v=4",
-    "autor": "Cristian Rodriguez",
+    "author": "Cristian Rodriguez",
     "date": "June 15",
     "image": "https://www.researchgate.net/publication/326541376/figure/fig3/AS:671946131922947@1537215850961/The-semantic-model-of-creating-an-HTML-page-Typically-web-pages-are-created-in.ppm",
     "title": "HTML Semántico",
@@ -67,7 +67,7 @@
   { 
     "id": "0003",
     "avatar": "/src/assets/icons/avatarGV.png",
-    "autor": "Gonzalo Vidal",
+    "author": "Gonzalo Vidal",
     "date": "May 23",
     "image": "https://i.postimg.cc/fRc02yrM/df.png",
     "title": "Scopes & Closures",
@@ -108,7 +108,7 @@
   { 
     "id": "0004",
     "avatar": "/src/assets/icons/avatarGV.png",
-    "autor": "Gonzalo Vidal",
+    "author": "Gonzalo Vidal",
     "date": "March 5",
     "image": "https://www.emrerothzerg.com.au/wp-content/uploads/2020/11/what-is-bem-methodology-why-you-should-you-bem-for-your-projects-5da124b6c12d3-612x252-c-default.jpg",
     "title": "Data Structures - Javascript, a wider vision from a perspective of an ex marine...",
